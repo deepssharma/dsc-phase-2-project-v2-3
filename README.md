@@ -46,7 +46,10 @@ Even though R-scores are higher for non-log transformed data, we can clearly see
 
 From Regression modeling we can say that price is most directly related to the living square footage of the house, and is the most important factor in price. But having additional features like waterfront, basement, number of bedrooms etc adds value to the house.
 
-Final Recommendations
+## Final Recommendations
+We see that living square footage is very strongly correlated to house price, and also that houses which have higher grade quality, meaning the construction standards get sold for higher prices. But looking at the distributions of grade values, we see that most of the houses that get sold are grades 7 and 8. Looking at the distribution of square footage vs grades, we can see that there are many houses in grades 5 and 6 that have same square footage as the houses in grades 7 and 8. I would therefore recommend that renovating houses in grades 5 and 6 with similar square footage as grades 7 and 8 would be profitable for real estate firm looking to invest.
+
+![Business Recommendation ](https://github.com/deepssharma/dsc-phase-2-project-v2-3/blob/main/figs/business_recommendation.png)
 
 ## Future Work
 One can try to see if adding interaction terms will improve the model or not! Also, having more data as always will help figuring out things more quantitavely such as improvement from rennovations etc
