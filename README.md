@@ -44,6 +44,7 @@ Even though R-scores are higher for non-log transformed data, we can clearly see
 
 ![Linear Data](https://github.com/deepssharma/dsc-phase-2-project-v2-3/blob/main/figs/qqplot_linear.png "Linear Data") ![Log-Transformed data](https://github.com/deepssharma/dsc-phase-2-project-v2-3/blob/main/figs/qqplot_logdata.png "Log transformed data")
 
+
 From Regression modeling we can say that price is most directly related to the living square footage of the house, and is the most important factor in price. But having additional features like waterfront, basement, number of bedrooms etc adds value to the house.
 
 ## Final Recommendations
