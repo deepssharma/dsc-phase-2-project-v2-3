@@ -2,6 +2,9 @@
 ## Goal of the Project
 The goal of Phase 2 project is to model data using regression techniques and come up with some business
 recommendataions. The data consists of house sales data of Kings County during 2014 and 2015. After looking into data, I was intrigued to find out how the age of house and features such as waterfront and view impact the price of house. I therefore looked at the effect of these variables and certain other parameters such as condition, bedrooms etc to see if these make an improvement in my model outcome. Alternatively, one could state that does including these varaibles in regression model minimizes the difference in predicted sale value and actual values, and thus provide insight into as to what features will help sellers to raise their house value.
+Specifically I an define the following problem for a real estate agency(or a homeowner who wants to sell his house)interested in investing into houses
+
+**What kind of houses the agency should invest in to maximize profits**
 
 ## Data Set
 The dataset contains inforamtion about the houses that were sold in year 2014 and 2015 in Kings County.
@@ -42,6 +45,8 @@ Even though R-scores are higher for non-log transformed data, we can clearly see
 ![Linear Data](https://github.com/deepssharma/dsc-phase-2-project-v2-3/blob/main/figs/qqplot_linear.png "Linear Data") ![Log-Transformed data](https://github.com/deepssharma/dsc-phase-2-project-v2-3/blob/main/figs/qqplot_logdata.png "Log transformed data")
 
 From Regression modeling we can say that price is most directly related to the living square footage of the house, and is the most important factor in price. But having additional features like waterfront, basement, number of bedrooms etc adds value to the house.
+
+Final Recommendations
 
 ## Future Work
 One can try to see if adding interaction terms will improve the model or not! Also, having more data as always will help figuring out things more quantitavely such as improvement from rennovations etc
