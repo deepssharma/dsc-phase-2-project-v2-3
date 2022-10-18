@@ -37,5 +37,11 @@ Log-transformed Model (R-squared Score)
    * Baseline Model (most correlated feature): Both train and test scores were around 0.45
    * Final Model: Both train and test scores were around 0.54
  
-Even though R-scores are higher for non.log transformed data, but we can see in the qq plots below that linear Regression assumptions are violated and as such we cant rely on that model. Model with Log-tranformation has a much better qq plot distribution making us feel more comfortable about it 
+Even though R-scores are higher for non-log transformed data, we can clearly see in the qq plots below that linear Regression assumptions are violated and as such we can not rely on that model. Model with Log-tranformation has a much better qq plot distribution making us feel more comfortable about it. Looking at residual plots again confirms this as one can see homoscadesity in log-transformed data whereas non-log transformed data deviated from it.
+
+![Linear Data](https://github.com/deepssharma/dsc-phase-2-project-v2-3/blob/main/figs/qqplot_linear.png "Linear Data") ![Log-Transformed data](https://github.com/deepssharma/dsc-phase-2-project-v2-3/blob/main/figs/qqplot_logdata.png "Log transformed data")
+
+From Regression modeling we can say that price is most directly related to the living square footage of the house, and is the most important factor in price. But having additional features like waterfront, basement, number of bedrooms etc adds value to the house.
+
 ## Future Work
+One can try to see if adding interaction terms will improve the model or not! Also, having more data as always will help figuring out things more quantitavely such as improvement from rennovations etc
