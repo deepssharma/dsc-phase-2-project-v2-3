@@ -32,8 +32,10 @@ The dataset contains inforamtion about the houses that were sold in year 2014 an
 Linear Model (R-squared Score):
    * Baseline Model (most correlated feature): Both train and test scores were around 0.50
    * Final Model: Both train and test scores were around 0.60
+
 Log-transformed Model (R-squared Score)
    * Baseline Model (most correlated feature): Both train and test scores were around 0.45
    * Final Model: Both train and test scores were around 0.54
+ 
 Even though R-scores are higher for non.log transformed data, but we can see in the qq plots below that linear Regression assumptions are violated and as such we cant rely on that model. Model with Log-tranformation has a much better qq plot distribution making us feel more comfortable about it 
 ## Future Work
