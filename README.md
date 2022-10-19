@@ -49,8 +49,9 @@ From Regression modeling we can say that price is most directly related to the l
 
 ## Regression Co-efficients
 * For the log transformed model we got a R2 of ~0.63, which means that our data can explain ~ 63% variances as seen in data. The p-values for all the features were very very small (<<0.0001) which means all the features have some effects on price.
-* the co-efficient for sqft_living is ~0.48, meaning that an increase of 1% in sqft_living area will result a 0.5% increase in price
-* the co-efficient for grade_val is ~1.6, meaning having an improvement in grade by 1% will result an increase of 1.6% in the house price.
+* the co-efficient for sqft_living_log is ~0.48, meaning that given all other variables are constant, an increase of 1% in sqft_living area will result a 0.5% increase in price
+* the co-efficient for grade_val_log is ~1.6, meaning that under the assumption all other variables are constant, an improvement in grade by 1% will result an increase of 1.6% in the house price.
+* waterfront is ~0.39, since waterfront is a binary variable, this means that having a waterfront will increase the house price by 48% ((exp^0.39-1)*100).
 
 ## Final Recommendations
 We see that living square footage is very strongly correlated to house price, and also that houses which have higher grade quality, meaning the construction standards get sold for higher prices. But looking at the distributions of grade values, we see that most of the houses that get sold are grades 7 and 8. Looking at the distribution of square footage vs grades, we can see that there are many houses in grades 5 and 6 that have same square footage as the houses in grades 7 and 8. I would therefore recommend that renovating houses in grades 5 and 6 with similar square footage as grades 7 and 8 would be profitable for real estate firm looking to invest.
