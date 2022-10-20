@@ -23,8 +23,8 @@ The dataset contains inforamtion about the houses that were sold in year 2014 an
 * "sqft_living15" and "sqft_lot15" are strongly correlated with "sqft_living" and "sqft_lot" respectively. So I will drop "sqft_living15" and  "sqft_lot15 from the list of my variables that go into model
 * yr_built and age are perfectly correlared as is obvious. I will use only "age"
 * sqft_above and sqft_living are correlated, so will drop "sqft_above"
-* "grad_val" is strongly correlated with sqft_living and many other features. Initially I dropped both grade_val and grade (since grade_val is essentially grade), however given that grade is such an important feature, I included it in regression and compared qq plots and residuals. They looked essentially the same as without including it, but model gave higher R2. So I include it in final model.
-* bathrooms seem to be strongly correlated with sqft_living and so I dropped bathrooms as well
+* "grad_val" is correlated with sqft_living and many other features. Initially I dropped both grade_val and grade (since grade_val is essentially grade), however given that grade is such an important feature, I included it in regression and compared qq plots and residuals. They looked essentially the same as without including it, but model gave higher R2. So I included it in final model.
+* bathrooms seem to be strongly correlated with sqft_living and so I dropped bathrooms.
 ### Regression
 * Looked at the individual distributions of variables, and also their scatter plot w.r.t. house prices. Almost all of the distributions deviate from normality and so using linear regression is not very justified. However we can still look at the linear regression and see what the results are. I therofore Built a baseline model using most correlated feature "sqft_living". 
 * In the next step, I performed Log transformation on numerical variables and hot encoders for categorical variables.
@@ -35,7 +35,6 @@ The dataset contains inforamtion about the houses that were sold in year 2014 an
 Linear Model (R-squared Score):
    * Baseline Model (most correlated feature): Both train and test scores were around 0.50
    * Final Model: Both train and test scores were around 0.60 (0.66 if I include grade_val)
-
 Log-transformed Model (R-squared Score)
    * Baseline Model (most correlated feature): Both train and test scores were around 0.45
    * Final Model: Both train and test scores were around 0.54 (0.62 if I include grade_val)
