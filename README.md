@@ -8,7 +8,6 @@ Specifically I an define the following problem for a real estate agency(or a hom
 
 ## Data Set
 The dataset contains inforamtion about the houses that were sold in year 2014 and 2015 in Kings County.
-* The IMDB is an SQL database and had different tables connected by movie_id, and/or person id. These tables have lot of information like average ratings, directors, actors, etc etc. 
 
 ## Data Cleaning
   * Replaced  basement sq_footage values that were "?" and  NAN with 0 
